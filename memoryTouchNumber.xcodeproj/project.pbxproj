@@ -7,15 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35001F79B63E0A56F533E48C /* Pods_memoryTouchNumberTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF5914E94DDBEEC84AC828CF /* Pods_memoryTouchNumberTests.framework */; };
+		510B0F474222506CC022131F /* Pods_memoryTouchNumberUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 053CC027DC5621650B66DDF3 /* Pods_memoryTouchNumberUITests.framework */; };
 		69ACFE96245DDA9A00A58DB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ACFE95245DDA9A00A58DB0 /* AppDelegate.swift */; };
 		69ACFE98245DDA9A00A58DB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ACFE97245DDA9A00A58DB0 /* SceneDelegate.swift */; };
-		69ACFE9A245DDA9A00A58DB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ACFE99245DDA9A00A58DB0 /* ViewController.swift */; };
+		69ACFE9A245DDA9A00A58DB0 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ACFE99245DDA9A00A58DB0 /* StartViewController.swift */; };
 		69ACFE9D245DDA9A00A58DB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69ACFE9B245DDA9A00A58DB0 /* Main.storyboard */; };
 		69ACFEA0245DDA9A00A58DB0 /* memoryTouchNumber.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 69ACFE9E245DDA9A00A58DB0 /* memoryTouchNumber.xcdatamodeld */; };
 		69ACFEA2245DDA9B00A58DB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69ACFEA1245DDA9B00A58DB0 /* Assets.xcassets */; };
 		69ACFEA5245DDA9B00A58DB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69ACFEA3245DDA9B00A58DB0 /* LaunchScreen.storyboard */; };
 		69ACFEB0245DDA9B00A58DB0 /* memoryTouchNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ACFEAF245DDA9B00A58DB0 /* memoryTouchNumberTests.swift */; };
 		69ACFEBB245DDA9B00A58DB0 /* memoryTouchNumberUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ACFEBA245DDA9B00A58DB0 /* memoryTouchNumberUITests.swift */; };
+		69ACFED0245DDB7400A58DB0 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ACFECE245DDB7400A58DB0 /* GameViewController.swift */; };
+		69ACFED1245DDB7400A58DB0 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69ACFECF245DDB7400A58DB0 /* GameViewController.xib */; };
+		69ACFED8245E57A500A58DB0 /* ResultModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ACFED6245E57A500A58DB0 /* ResultModalViewController.swift */; };
+		69ACFED9245E57A500A58DB0 /* ResultModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69ACFED7245E57A500A58DB0 /* ResultModalViewController.xib */; };
+		69ACFEDF245EC8A600A58DB0 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ACFEDE245EC8A600A58DB0 /* Record.swift */; };
+		69ACFEF0245EF1FA00A58DB0 /* RankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ACFEEE245EF1FA00A58DB0 /* RankingTableViewCell.swift */; };
+		69ACFEF1245EF1FA00A58DB0 /* RankingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69ACFEEF245EF1FA00A58DB0 /* RankingTableViewCell.xib */; };
+		69ACFEF8245F1ACA00A58DB0 /* RankingModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ACFEF6245F1ACA00A58DB0 /* RankingModalViewController.swift */; };
+		69ACFEF9245F1ACA00A58DB0 /* RankingModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69ACFEF7245F1ACA00A58DB0 /* RankingModalViewController.xib */; };
+		69ACFEFB245F341D00A58DB0 /* GADBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ACFEFA245F341D00A58DB0 /* GADBannerViewController.swift */; };
+		C00DCDD8A110DCE0B2064422 /* Pods_memoryTouchNumber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1FE9C0D4DCE85C4844B5A /* Pods_memoryTouchNumber.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +49,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		69ACFE92245DDA9A00A58DB0 /* memoryTouchNumber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = memoryTouchNumber.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		053CC027DC5621650B66DDF3 /* Pods_memoryTouchNumberUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_memoryTouchNumberUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C12E59AC317AF93A08EBDA8 /* Pods-memoryTouchNumberUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memoryTouchNumberUITests.debug.xcconfig"; path = "Target Support Files/Pods-memoryTouchNumberUITests/Pods-memoryTouchNumberUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		26D1FE9C0D4DCE85C4844B5A /* Pods_memoryTouchNumber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_memoryTouchNumber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BE6CE4B3148B99BE8A40CC6 /* Pods-memoryTouchNumberUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memoryTouchNumberUITests.release.xcconfig"; path = "Target Support Files/Pods-memoryTouchNumberUITests/Pods-memoryTouchNumberUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4D9E457EDEF7E735902E5B9D /* Pods-memoryTouchNumberTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memoryTouchNumberTests.debug.xcconfig"; path = "Target Support Files/Pods-memoryTouchNumberTests/Pods-memoryTouchNumberTests.debug.xcconfig"; sourceTree = "<group>"; };
+		69ACFE92245DDA9A00A58DB0 /* TouchABC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchABC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69ACFE95245DDA9A00A58DB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69ACFE97245DDA9A00A58DB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		69ACFE99245DDA9A00A58DB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		69ACFE99245DDA9A00A58DB0 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		69ACFE9C245DDA9A00A58DB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		69ACFE9F245DDA9A00A58DB0 /* memoryTouchNumber.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = memoryTouchNumber.xcdatamodel; sourceTree = "<group>"; };
 		69ACFEA1245DDA9B00A58DB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +69,20 @@
 		69ACFEB6245DDA9B00A58DB0 /* memoryTouchNumberUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = memoryTouchNumberUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69ACFEBA245DDA9B00A58DB0 /* memoryTouchNumberUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memoryTouchNumberUITests.swift; sourceTree = "<group>"; };
 		69ACFEBC245DDA9B00A58DB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69ACFECE245DDB7400A58DB0 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		69ACFECF245DDB7400A58DB0 /* GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
+		69ACFED6245E57A500A58DB0 /* ResultModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultModalViewController.swift; sourceTree = "<group>"; };
+		69ACFED7245E57A500A58DB0 /* ResultModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultModalViewController.xib; sourceTree = "<group>"; };
+		69ACFEDE245EC8A600A58DB0 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		69ACFEEE245EF1FA00A58DB0 /* RankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingTableViewCell.swift; sourceTree = "<group>"; };
+		69ACFEEF245EF1FA00A58DB0 /* RankingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankingTableViewCell.xib; sourceTree = "<group>"; };
+		69ACFEF6245F1ACA00A58DB0 /* RankingModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingModalViewController.swift; sourceTree = "<group>"; };
+		69ACFEF7245F1ACA00A58DB0 /* RankingModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankingModalViewController.xib; sourceTree = "<group>"; };
+		69ACFEFA245F341D00A58DB0 /* GADBannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GADBannerViewController.swift; sourceTree = "<group>"; };
+		6E0541C7A6385B9AFF3B3F37 /* Pods-memoryTouchNumber.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memoryTouchNumber.debug.xcconfig"; path = "Target Support Files/Pods-memoryTouchNumber/Pods-memoryTouchNumber.debug.xcconfig"; sourceTree = "<group>"; };
+		BF5914E94DDBEEC84AC828CF /* Pods_memoryTouchNumberTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_memoryTouchNumberTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0B4C19129630CC8CCFAC6A3 /* Pods-memoryTouchNumberTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memoryTouchNumberTests.release.xcconfig"; path = "Target Support Files/Pods-memoryTouchNumberTests/Pods-memoryTouchNumberTests.release.xcconfig"; sourceTree = "<group>"; };
+		F66133BB068E3AF7E867E2A4 /* Pods-memoryTouchNumber.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memoryTouchNumber.release.xcconfig"; path = "Target Support Files/Pods-memoryTouchNumber/Pods-memoryTouchNumber.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C00DCDD8A110DCE0B2064422 /* Pods_memoryTouchNumber.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35001F79B63E0A56F533E48C /* Pods_memoryTouchNumberTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +106,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				510B0F474222506CC022131F /* Pods_memoryTouchNumberUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64E39C0B49F5C465B6A66EF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26D1FE9C0D4DCE85C4844B5A /* Pods_memoryTouchNumber.framework */,
+				BF5914E94DDBEEC84AC828CF /* Pods_memoryTouchNumberTests.framework */,
+				053CC027DC5621650B66DDF3 /* Pods_memoryTouchNumberUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		69ACFE89245DDA9A00A58DB0 = {
 			isa = PBXGroup;
 			children = (
@@ -85,13 +130,15 @@
 				69ACFEAE245DDA9B00A58DB0 /* memoryTouchNumberTests */,
 				69ACFEB9245DDA9B00A58DB0 /* memoryTouchNumberUITests */,
 				69ACFE93245DDA9A00A58DB0 /* Products */,
+				A37F4AC8A2AC15686BAB1DAD /* Pods */,
+				64E39C0B49F5C465B6A66EF9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		69ACFE93245DDA9A00A58DB0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				69ACFE92245DDA9A00A58DB0 /* memoryTouchNumber.app */,
+				69ACFE92245DDA9A00A58DB0 /* TouchABC.app */,
 				69ACFEAB245DDA9B00A58DB0 /* memoryTouchNumberTests.xctest */,
 				69ACFEB6245DDA9B00A58DB0 /* memoryTouchNumberUITests.xctest */,
 			);
@@ -101,10 +148,11 @@
 		69ACFE94245DDA9A00A58DB0 /* memoryTouchNumber */ = {
 			isa = PBXGroup;
 			children = (
+				69ACFEDD245EC61000A58DB0 /* Model */,
+				69ACFEDC245EC60300A58DB0 /* ViewModel */,
+				69ACFEC9245DDAB800A58DB0 /* View */,
 				69ACFE95245DDA9A00A58DB0 /* AppDelegate.swift */,
 				69ACFE97245DDA9A00A58DB0 /* SceneDelegate.swift */,
-				69ACFE99245DDA9A00A58DB0 /* ViewController.swift */,
-				69ACFE9B245DDA9A00A58DB0 /* Main.storyboard */,
 				69ACFEA1245DDA9B00A58DB0 /* Assets.xcassets */,
 				69ACFEA3245DDA9B00A58DB0 /* LaunchScreen.storyboard */,
 				69ACFEA6245DDA9B00A58DB0 /* Info.plist */,
@@ -131,6 +179,52 @@
 			path = memoryTouchNumberUITests;
 			sourceTree = "<group>";
 		};
+		69ACFEC9245DDAB800A58DB0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69ACFEFA245F341D00A58DB0 /* GADBannerViewController.swift */,
+				69ACFE99245DDA9A00A58DB0 /* StartViewController.swift */,
+				69ACFE9B245DDA9A00A58DB0 /* Main.storyboard */,
+				69ACFECE245DDB7400A58DB0 /* GameViewController.swift */,
+				69ACFECF245DDB7400A58DB0 /* GameViewController.xib */,
+				69ACFED6245E57A500A58DB0 /* ResultModalViewController.swift */,
+				69ACFED7245E57A500A58DB0 /* ResultModalViewController.xib */,
+				69ACFEEE245EF1FA00A58DB0 /* RankingTableViewCell.swift */,
+				69ACFEEF245EF1FA00A58DB0 /* RankingTableViewCell.xib */,
+				69ACFEF6245F1ACA00A58DB0 /* RankingModalViewController.swift */,
+				69ACFEF7245F1ACA00A58DB0 /* RankingModalViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69ACFEDC245EC60300A58DB0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		69ACFEDD245EC61000A58DB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				69ACFEDE245EC8A600A58DB0 /* Record.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A37F4AC8A2AC15686BAB1DAD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E0541C7A6385B9AFF3B3F37 /* Pods-memoryTouchNumber.debug.xcconfig */,
+				F66133BB068E3AF7E867E2A4 /* Pods-memoryTouchNumber.release.xcconfig */,
+				4D9E457EDEF7E735902E5B9D /* Pods-memoryTouchNumberTests.debug.xcconfig */,
+				C0B4C19129630CC8CCFAC6A3 /* Pods-memoryTouchNumberTests.release.xcconfig */,
+				1C12E59AC317AF93A08EBDA8 /* Pods-memoryTouchNumberUITests.debug.xcconfig */,
+				2BE6CE4B3148B99BE8A40CC6 /* Pods-memoryTouchNumberUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +232,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 69ACFEBF245DDA9B00A58DB0 /* Build configuration list for PBXNativeTarget "memoryTouchNumber" */;
 			buildPhases = (
+				53C93034E3588D1323EB5BEE /* [CP] Check Pods Manifest.lock */,
 				69ACFE8E245DDA9A00A58DB0 /* Sources */,
 				69ACFE8F245DDA9A00A58DB0 /* Frameworks */,
 				69ACFE90245DDA9A00A58DB0 /* Resources */,
+				C19C0DB0A7063DA3707A6E94 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,13 +244,14 @@
 			);
 			name = memoryTouchNumber;
 			productName = memoryTouchNumber;
-			productReference = 69ACFE92245DDA9A00A58DB0 /* memoryTouchNumber.app */;
+			productReference = 69ACFE92245DDA9A00A58DB0 /* TouchABC.app */;
 			productType = "com.apple.product-type.application";
 		};
 		69ACFEAA245DDA9B00A58DB0 /* memoryTouchNumberTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 69ACFEC2245DDA9B00A58DB0 /* Build configuration list for PBXNativeTarget "memoryTouchNumberTests" */;
 			buildPhases = (
+				C94A556AE208787794E85FE8 /* [CP] Check Pods Manifest.lock */,
 				69ACFEA7245DDA9B00A58DB0 /* Sources */,
 				69ACFEA8245DDA9B00A58DB0 /* Frameworks */,
 				69ACFEA9245DDA9B00A58DB0 /* Resources */,
@@ -173,6 +270,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 69ACFEC5245DDA9B00A58DB0 /* Build configuration list for PBXNativeTarget "memoryTouchNumberUITests" */;
 			buildPhases = (
+				04FA5466F43FD43651016C8D /* [CP] Check Pods Manifest.lock */,
 				69ACFEB2245DDA9B00A58DB0 /* Sources */,
 				69ACFEB3245DDA9B00A58DB0 /* Frameworks */,
 				69ACFEB4245DDA9B00A58DB0 /* Resources */,
@@ -236,7 +334,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				69ACFEA5245DDA9B00A58DB0 /* LaunchScreen.storyboard in Resources */,
+				69ACFED1245DDB7400A58DB0 /* GameViewController.xib in Resources */,
+				69ACFED9245E57A500A58DB0 /* ResultModalViewController.xib in Resources */,
+				69ACFEF9245F1ACA00A58DB0 /* RankingModalViewController.xib in Resources */,
 				69ACFEA2245DDA9B00A58DB0 /* Assets.xcassets in Resources */,
+				69ACFEF1245EF1FA00A58DB0 /* RankingTableViewCell.xib in Resources */,
 				69ACFE9D245DDA9A00A58DB0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,15 +359,120 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04FA5466F43FD43651016C8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-memoryTouchNumberUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53C93034E3588D1323EB5BEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-memoryTouchNumber-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C19C0DB0A7063DA3707A6E94 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-memoryTouchNumber/Pods-memoryTouchNumber-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-memoryTouchNumber/Pods-memoryTouchNumber-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C94A556AE208787794E85FE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-memoryTouchNumberTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		69ACFE8E245DDA9A00A58DB0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69ACFE9A245DDA9A00A58DB0 /* ViewController.swift in Sources */,
+				69ACFED0245DDB7400A58DB0 /* GameViewController.swift in Sources */,
+				69ACFE9A245DDA9A00A58DB0 /* StartViewController.swift in Sources */,
+				69ACFEF0245EF1FA00A58DB0 /* RankingTableViewCell.swift in Sources */,
+				69ACFEF8245F1ACA00A58DB0 /* RankingModalViewController.swift in Sources */,
 				69ACFE96245DDA9A00A58DB0 /* AppDelegate.swift in Sources */,
+				69ACFEFB245F341D00A58DB0 /* GADBannerViewController.swift in Sources */,
 				69ACFE98245DDA9A00A58DB0 /* SceneDelegate.swift in Sources */,
+				69ACFEDF245EC8A600A58DB0 /* Record.swift in Sources */,
 				69ACFEA0245DDA9A00A58DB0 /* memoryTouchNumber.xcdatamodeld in Sources */,
+				69ACFED8245E57A500A58DB0 /* ResultModalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +577,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -424,7 +631,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -436,17 +643,20 @@
 		};
 		69ACFEC0245DDA9B00A58DB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E0541C7A6385B9AFF3B3F37 /* Pods-memoryTouchNumber.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D2N2C4AM8V;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = UMKQ2M547A;
 				INFOPLIST_FILE = memoryTouchNumber/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = zhenya.memoryTouchNumber;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.yahoo.riana0626.TouchABC;
+				PRODUCT_NAME = TouchABC;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -454,17 +664,20 @@
 		};
 		69ACFEC1245DDA9B00A58DB0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F66133BB068E3AF7E867E2A4 /* Pods-memoryTouchNumber.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D2N2C4AM8V;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = UMKQ2M547A;
 				INFOPLIST_FILE = memoryTouchNumber/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = zhenya.memoryTouchNumber;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.yahoo.riana0626.TouchABC;
+				PRODUCT_NAME = TouchABC;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -472,6 +685,7 @@
 		};
 		69ACFEC3245DDA9B00A58DB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D9E457EDEF7E735902E5B9D /* Pods-memoryTouchNumberTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +708,7 @@
 		};
 		69ACFEC4245DDA9B00A58DB0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0B4C19129630CC8CCFAC6A3 /* Pods-memoryTouchNumberTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +731,7 @@
 		};
 		69ACFEC6245DDA9B00A58DB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C12E59AC317AF93A08EBDA8 /* Pods-memoryTouchNumberUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -536,6 +752,7 @@
 		};
 		69ACFEC7245DDA9B00A58DB0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BE6CE4B3148B99BE8A40CC6 /* Pods-memoryTouchNumberUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
