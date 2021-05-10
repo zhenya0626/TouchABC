@@ -9,9 +9,11 @@
 import UIKit
 import RealmSwift
 import GoogleMobileAds
+import StoreKit
+
 
 class ResultModalViewController: GADBannerViewController, UITableViewDelegate, UITableViewDataSource {
-    var interstitial: GADInterstitial!
+    var interstitial: GADInterstitialAd?
     
     var record: [Record] = [Record]()
     var image: UIImage = UIImage()
@@ -19,7 +21,7 @@ class ResultModalViewController: GADBannerViewController, UITableViewDelegate, U
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         record.count
     }
-//
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RankingTableViewCell", for: indexPath ) as! RankingTableViewCell
         cell.setCell(record: record[indexPath.row], index: indexPath.row)
@@ -40,9 +42,17 @@ class ResultModalViewController: GADBannerViewController, UITableViewDelegate, U
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        interstitial = GADInterstitial(adUnitID: "ca-app-pub-9614012526549975/7741681777")
         let request = GADRequest()
-        interstitial.load(request)
+        GADInterstitialAd.load(withAdUnitID: "ca-app-pub-9614012526549975/7741681777",
+                                              request: request,
+                                              completionHandler: { [self] ad, error in
+                                                if let error = error {
+                                                  print("Failed to load interstitial ad with error: \(error.localizedDescription)")
+                                                  return
+                                                }
+                                                interstitial = ad
+                                              }
+        )
         rankingTableView.layer.borderColor = UIColor(red:59/255,green:89/255,blue:152/255,alpha:0.7).cgColor
 
         // 常にライトモード（明るい外観）を指定することでダークモード適用を回避
@@ -65,11 +75,16 @@ class ResultModalViewController: GADBannerViewController, UITableViewDelegate, U
     }
     override func viewDidAppear(_ animated: Bool) {
         image = GetImage()
+        let interstitialCount = UserDefaults.standard.integer(forKey: "interstitialCount")
+        if interstitialCount % 10 == 2 {
+            SKStoreReviewController.requestReview()
+        }
+
     }
 
     @IBAction func retryButtonAction(_ sender: Any) {
         let interstitialCount = UserDefaults.standard.integer(forKey: "interstitialCount")
-        if interstitialCount >= 8 && interstitial.isReady {
+        if interstitialCount >= 8, let interstitial = interstitial {
             UserDefaults.standard.set(0, forKey: "interstitialCount")
           interstitial.present(fromRootViewController: self)
         } else {
