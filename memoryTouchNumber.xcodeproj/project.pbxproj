@@ -29,6 +29,7 @@
 		69ACFEF9245F1ACA00A58DB0 /* RankingModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69ACFEF7245F1ACA00A58DB0 /* RankingModalViewController.xib */; };
 		69ACFEFB245F341D00A58DB0 /* GADBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ACFEFA245F341D00A58DB0 /* GADBannerViewController.swift */; };
 		C00DCDD8A110DCE0B2064422 /* Pods_memoryTouchNumber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1FE9C0D4DCE85C4844B5A /* Pods_memoryTouchNumber.framework */; };
+		EEED9325264ED46300F5BBC5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEED9324264ED46300F5BBC5 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		6E0541C7A6385B9AFF3B3F37 /* Pods-memoryTouchNumber.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memoryTouchNumber.debug.xcconfig"; path = "Target Support Files/Pods-memoryTouchNumber/Pods-memoryTouchNumber.debug.xcconfig"; sourceTree = "<group>"; };
 		BF5914E94DDBEEC84AC828CF /* Pods_memoryTouchNumberTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_memoryTouchNumberTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0B4C19129630CC8CCFAC6A3 /* Pods-memoryTouchNumberTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memoryTouchNumberTests.release.xcconfig"; path = "Target Support Files/Pods-memoryTouchNumberTests/Pods-memoryTouchNumberTests.release.xcconfig"; sourceTree = "<group>"; };
+		EEED9324264ED46300F5BBC5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F66133BB068E3AF7E867E2A4 /* Pods-memoryTouchNumber.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memoryTouchNumber.release.xcconfig"; path = "Target Support Files/Pods-memoryTouchNumber/Pods-memoryTouchNumber.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,6 +158,7 @@
 				69ACFEA1245DDA9B00A58DB0 /* Assets.xcassets */,
 				69ACFEA3245DDA9B00A58DB0 /* LaunchScreen.storyboard */,
 				69ACFEA6245DDA9B00A58DB0 /* Info.plist */,
+				EEED9324264ED46300F5BBC5 /* GoogleService-Info.plist */,
 				69ACFE9E245DDA9A00A58DB0 /* memoryTouchNumber.xcdatamodeld */,
 			);
 			path = memoryTouchNumber;
@@ -334,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69ACFEA5245DDA9B00A58DB0 /* LaunchScreen.storyboard in Resources */,
+				EEED9325264ED46300F5BBC5 /* GoogleService-Info.plist in Resources */,
 				69ACFED1245DDB7400A58DB0 /* GameViewController.xib in Resources */,
 				69ACFED9245E57A500A58DB0 /* ResultModalViewController.xib in Resources */,
 				69ACFEF9245F1ACA00A58DB0 /* RankingModalViewController.xib in Resources */,
@@ -634,14 +638,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = UMKQ2M547A;
 				INFOPLIST_FILE = memoryTouchNumber/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.yahoo.riana0626.TouchABC;
 				PRODUCT_NAME = TouchABC;
 				SWIFT_VERSION = 5.0;
@@ -655,14 +659,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = UMKQ2M547A;
 				INFOPLIST_FILE = memoryTouchNumber/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.yahoo.riana0626.TouchABC;
 				PRODUCT_NAME = TouchABC;
 				SWIFT_VERSION = 5.0;
