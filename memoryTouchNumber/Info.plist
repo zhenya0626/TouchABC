@@ -24,6 +24,8 @@
 	<true/>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string></string>
 	<key>NSUserTrackingUsageDescription</key>
 	<string>表示する広告を適切に選択するために使用します。</string>
 	<key>SKAdNetworkItems</key>
