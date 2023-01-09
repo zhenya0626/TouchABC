@@ -18,7 +18,7 @@ class GADBannerViewController: UIViewController, GADBannerViewDelegate {
         // In this case, we instantiate the banner with desired ad size.
         bannerView = GADBannerView(adSize: kGADAdSizeBanner)
         // テスト用
-        // bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+//        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
         // 本番用
         bannerView.adUnitID = "ca-app-pub-9614012526549975/1240918262"
 
