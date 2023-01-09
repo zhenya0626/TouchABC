@@ -29,6 +29,7 @@
 		69ACFEF9245F1ACA00A58DB0 /* RankingModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69ACFEF7245F1ACA00A58DB0 /* RankingModalViewController.xib */; };
 		69ACFEFB245F341D00A58DB0 /* GADBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ACFEFA245F341D00A58DB0 /* GADBannerViewController.swift */; };
 		C00DCDD8A110DCE0B2064422 /* Pods_memoryTouchNumber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1FE9C0D4DCE85C4844B5A /* Pods_memoryTouchNumber.framework */; };
+		EECED7D5296BA67B004888A3 /* GKLocalPlayerUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECED7D4296BA67B004888A3 /* GKLocalPlayerUtil.swift */; };
 		EEED9325264ED46300F5BBC5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEED9324264ED46300F5BBC5 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +84,7 @@
 		6E0541C7A6385B9AFF3B3F37 /* Pods-memoryTouchNumber.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memoryTouchNumber.debug.xcconfig"; path = "Target Support Files/Pods-memoryTouchNumber/Pods-memoryTouchNumber.debug.xcconfig"; sourceTree = "<group>"; };
 		BF5914E94DDBEEC84AC828CF /* Pods_memoryTouchNumberTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_memoryTouchNumberTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0B4C19129630CC8CCFAC6A3 /* Pods-memoryTouchNumberTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memoryTouchNumberTests.release.xcconfig"; path = "Target Support Files/Pods-memoryTouchNumberTests/Pods-memoryTouchNumberTests.release.xcconfig"; sourceTree = "<group>"; };
+		EECED7D4296BA67B004888A3 /* GKLocalPlayerUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKLocalPlayerUtil.swift; sourceTree = "<group>"; };
 		EEED9324264ED46300F5BBC5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F66133BB068E3AF7E867E2A4 /* Pods-memoryTouchNumber.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memoryTouchNumber.release.xcconfig"; path = "Target Support Files/Pods-memoryTouchNumber/Pods-memoryTouchNumber.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,6 +152,7 @@
 		69ACFE94245DDA9A00A58DB0 /* memoryTouchNumber */ = {
 			isa = PBXGroup;
 			children = (
+				EECED7D6296BA682004888A3 /* Util */,
 				69ACFEDD245EC61000A58DB0 /* Model */,
 				69ACFEDC245EC60300A58DB0 /* ViewModel */,
 				69ACFEC9245DDAB800A58DB0 /* View */,
@@ -226,6 +229,14 @@
 				2BE6CE4B3148B99BE8A40CC6 /* Pods-memoryTouchNumberUITests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EECED7D6296BA682004888A3 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				EECED7D4296BA67B004888A3 /* GKLocalPlayerUtil.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -454,6 +465,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EECED7D5296BA67B004888A3 /* GKLocalPlayerUtil.swift in Sources */,
 				69ACFED0245DDB7400A58DB0 /* GameViewController.swift in Sources */,
 				69ACFE9A245DDA9A00A58DB0 /* StartViewController.swift in Sources */,
 				69ACFEF0245EF1FA00A58DB0 /* RankingTableViewCell.swift in Sources */,
@@ -641,6 +653,7 @@
 				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = UMKQ2M547A;
 				INFOPLIST_FILE = memoryTouchNumber/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -662,6 +675,7 @@
 				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = UMKQ2M547A;
 				INFOPLIST_FILE = memoryTouchNumber/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

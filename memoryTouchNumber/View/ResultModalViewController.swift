@@ -10,6 +10,7 @@ import UIKit
 import RealmSwift
 import GoogleMobileAds
 import StoreKit
+import GameKit
 
 
 class ResultModalViewController: GADBannerViewController, UITableViewDelegate, UITableViewDataSource {
@@ -38,7 +39,7 @@ class ResultModalViewController: GADBannerViewController, UITableViewDelegate, U
     
     @IBOutlet weak var homeButton: UIButton!
     @IBOutlet weak var shareButton: UIButton!
-    
+    @IBOutlet weak var rankingButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,11 +65,21 @@ class ResultModalViewController: GADBannerViewController, UITableViewDelegate, U
         
         homeButton.layer.borderColor = UIColor(red:59/255,green:89/255,blue:152/255,alpha:0.7).cgColor
         shareButton.layer.borderColor = UIColor(red:59/255,green:89/255,blue:152/255,alpha:0.7).cgColor
+        rankingButton.layer.borderColor = UIColor(red:59/255,green:89/255,blue:152/255,alpha:0.7).cgColor
 
         resultTimeLabel.text = resultTime
         let realm = try! Realm()
         let resultRecord = realm.objects(Record.self) // retrieves all Dogs from the default Realm
         record = Array(resultRecord.sorted(byKeyPath: "id"))
+        
+        // Submit a score to one or more leaderboards
+        // リファクタする
+        let doubleResultTime = self.resultTime.replacingOccurrences(of: " 秒", with: "")
+        guard let score = Double(doubleResultTime) else { return }
+        GKLeaderboard.submitScore(Int(score * 100), context: 0, player: GKLocalPlayer.local,
+            leaderboardIDs: ["touchABCTime"]) { error in
+        }
+        
         
 
         // Do any additional setup after loading the view.
@@ -82,6 +93,12 @@ class ResultModalViewController: GADBannerViewController, UITableViewDelegate, U
 
     }
 
+    @IBAction func openRanking(_ sender: Any) {
+        // GameCenterのdashboardを表示する
+        let viewController = GKGameCenterViewController(state: .dashboard)
+        viewController.gameCenterDelegate = self
+        present(viewController, animated: true, completion: nil)
+    }
     @IBAction func retryButtonAction(_ sender: Any) {
         let interstitialCount = UserDefaults.standard.integer(forKey: "interstitialCount")
         if interstitialCount >= 8, let interstitial = interstitial {
@@ -95,7 +112,6 @@ class ResultModalViewController: GADBannerViewController, UITableViewDelegate, U
         //  上部余白の削除
         gameVC.modalPresentationStyle = .fullScreen
         gameVC.modalTransitionStyle = .crossDissolve
-        
         self.present(gameVC, animated: true, completion: nil)
     }
     
@@ -143,4 +159,9 @@ class ResultModalViewController: GADBannerViewController, UITableViewDelegate, U
         return capturedImage
     }
     
+}
+extension ResultModalViewController: GKGameCenterControllerDelegate {
+    func gameCenterViewControllerDidFinish(_ gameCenterViewController: GKGameCenterViewController) {
+        gameCenterViewController.dismiss(animated:true)
+    }
 }

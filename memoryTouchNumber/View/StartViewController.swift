@@ -10,11 +10,11 @@ import UIKit
 import RealmSwift
 import AdSupport
 import AppTrackingTransparency
+import GameKit
 
 
 class StartViewController: GADBannerViewController {
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,7 +22,6 @@ class StartViewController: GADBannerViewController {
         print(Realm.Configuration.defaultConfiguration.fileURL!)
         // 常にライトモード（明るい外観）を指定することでダークモード適用を回避
         self.overrideUserInterfaceStyle = .light
-        // Do any additional setup after loading the view.
         
     }
     
@@ -76,20 +75,22 @@ class StartViewController: GADBannerViewController {
         //  上部余白の削除
         gameVC.modalPresentationStyle = .fullScreen
         gameVC.modalTransitionStyle = .crossDissolve
-        
-
-        
+    
         self.present(gameVC, animated: true, completion: nil)
     }
     
     
     @IBAction func rankingButtonAction(_ sender: Any) {
-        let rankingVC :RankingModalViewController = RankingModalViewController()
-        //  上部余白の削除
-        rankingVC.modalPresentationStyle = .overCurrentContext
-//        rankingVC.modalTransitionStyle = .crossDissolve
-        self.present(rankingVC, animated: true, completion: nil)
+        // GameCenterのdashboardを表示する
+        let viewController = GKGameCenterViewController(state: .dashboard)
+        viewController.gameCenterDelegate = self
+        present(viewController, animated: true, completion: nil)
     }
     
 }
 
+extension StartViewController: GKGameCenterControllerDelegate {
+    func gameCenterViewControllerDidFinish(_ gameCenterViewController: GKGameCenterViewController) {
+        gameCenterViewController.dismiss(animated:true)
+    }
+}
